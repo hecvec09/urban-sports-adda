@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urban Sports Adda — Gurugram's Most Electrifying Multi-Sport Arena</title>
+    <meta name="description" content="Urban Sports Adda — Gurugram's premier multi-sport arena offering Box Cricket, Football, Badminton, Pickleball, RC Car Racing, Paddleball, Basketball and an in-house café.">
+    <meta property="og:title" content="Urban Sports Adda — Play. Compete. Conquer.">
+    <meta property="og:description" content="Gurugram's most electrifying multi-sport arena — 7 premium sports, in-house café, flexible timings.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.urbansportsadda.com">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏟️</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="loader-icon">⚡</span>
+                <span class="loader-text">URBAN SPORTS ADDA</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">URBAN SPORTS ADDA</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#sports" class="nav-link">Sports</a></li>
+                <li><a href="#cafe" class="nav-link">Café</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#" class="nav-cta" id="navBookBtn">Book a Slot</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <ul class="mobile-nav-links">
+                <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                <li><a href="#sports" class="mobile-nav-link">Sports</a></li>
+                <li><a href="#cafe" class="mobile-nav-link">Café</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+            <a href="#" class="mobile-book-btn" id="mobileBookBtn">Book a Slot ⚡</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="particle-container" id="particles"></div>
+            <div class="mesh-gradient"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" id="heroTitle">
+                <span class="title-line">PLAY.</span>
+                <span class="title-line">COMPETE.</span>
+                <span class="title-line">CONQUER.</span>
+            </h1>
+            <p class="hero-subtitle">Gurugram's most electrifying multi-sport arena — where every game is an experience</p>
+            <div class="hero-ctas">
+                <a href="#" class="btn btn-primary" id="heroBookBtn">
+                    <span>🏆</span> Book Your Slot
+                </a>
+                <a href="#sports" class="btn btn-outline">
+                    <span>▶</span> Explore Sports
+                </a>
+            </div>
+            <div class="hero-badges">
+                <div class="badge">
+                    <span class="badge-icon">🏟️</span>
+                    <span class="badge-text">7 Sports</span>
+                </div>
+                <div class="badge">
+                    <span class="badge-icon">☕</span>
+                    <span class="badge-text">Premium Café</span>
+                </div>
+                <div class="badge">
+                    <span class="badge-icon">📅</span>
+                    <span class="badge-text">Open 7 Days</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Sports Section -->
+    <section class="sports" id="sports">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-title">PICK YOUR GAME</h2>
+                <p class="section-subtitle">Choose your arena. Dominate the field.</p>
+            </div>
+            <div class="sports-grid">
+                <!-- Box Cricket -->
+                <div class="sport-card" data-tilt data-sport="360° Box Cricket">
+                    <div class="sport-card-bg" style="background-image: url('https://images.unsplash.com/photo-1531415074968-036ba1b575da?w=600&q=80')"></div>
+                    <div class="sport-card-overlay"></div>
+                    <div class="sport-card-content">
+                        <span class="sport-icon">🏏</span>
+                        <h3 class="sport-name">360° Box Cricket</h3>
+                        <p class="sport-tagline">Hit from every angle</p>
+                        <button class="sport-book-btn" data-sport="360° Box Cricket">Book Now</button>
+                    </div>
+                    <div class="sport-card-glow"></div>
+                </div>
+
+                <!-- Football -->
+                <div class="sport-card" data-tilt data-sport="Football">
+                    <div class="sport-card-bg" style="background-image: url('https://images.unsplash.com/photo-1553778263-73a83bab9b0c?w=600&q=80')"></div>
+                    <div class="sport-card-overlay"></div>
+                    <div class="sport-card-content">
+                        <span class="sport-icon">⚽</span>
+                        <h3 class="sport-name">Football</h3>
+                        <p class="sport-tagline">The beautiful game, amplified</p>
+                        <button class="sport-book-btn" data-sport="Football">Book Now</button>
+                    </div>
+                    <div class="sport-card-glow"></div>
+                </div>
+
+                <!-- Badminton -->
+                <div class="sport-card" data-tilt data-sport="Badminton">
+                    <div class="sport-card-bg" style="background-image: url('https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=600&q=80')"></div>
+                    <div class="sport-card-overlay"></div>
+                    <div class="sport-card-content">
+                        <span class="sport-icon">🏸</span>
+                        <h3 class="sport-name">Badminton</h3>
+                        <p class="sport-tagline">Smash it like you mean it</p>
+                        <button class="sport-book-btn" data-sport="Badminton">Book Now</button>
+                    </div>
+                    <div class="sport-card-glow"></div>
+                </div>
+
+                <!-- Pickleball -->
+                <div class="sport-card" data-tilt data-sport="Pickleball">
+                    <div class="sport-card-bg" style="background-image: url('https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=600&q=80')"></div>
+                    <div class="sport-card-overlay"></div>
+                    <div class="sport-card-content">
+                        <span class="sport-icon">🎾</span>
+                        <h3 class="sport-name">Pickleball</h3>
+                        <p class="sport-tagline">The fastest growing sport is here</p>
+                        <button class="sport-book-btn" data-sport="Pickleball">Book Now</button>
+                    </div>
+                    <div class="sport-card-glow"></div>
+                </div>
+
+                <!-- RC Car Racing -->
+                <div class="sport-card" data-tilt data-sport="RC Car Racing">
+                    <div class="sport-card-bg" style="background-image: url('https://images.unsplash.com/photo-1596727362302-b8d891c42ab8?w=600&q=80')"></div>
+                    <div class="sport-card-overlay"></div>
+                    <div class="sport-card-content">
+                        <span class="sport-icon">🏎️</span>
+                        <h3 class="sport-name">RC Car Racing</h3>
+                        <p class="sport-tagline">Throttle up, hold tight</p>
+                        <button class="sport-book-btn" data-sport="RC Car Racing">Book Now</button>
+                    </div>
+                    <div class="sport-card-glow"></div>
+                </div>
+
+                <!-- Paddleball -->
+                <div class="sport-card" data-tilt data-sport="Paddleball">
+                    <div class="sport-card-bg" style="background-image: url('https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?w=600&q=80')"></div>
+                    <div class="sport-card-overlay"></div>
+                    <div class="sport-card-content">
+                        <span class="sport-icon">🏓</span>
+                        <h3 class="sport-name">Paddleball</h3>
+                        <p class="sport-tagline">Fast. Furious. Fun.</p>
+                        <button class="sport-book-btn" data-sport="Paddleball">Book Now</button>
+                    </div>
+                    <div class="sport-card-glow"></div>
+                </div>
+
+                <!-- Basketball -->
+                <div class="sport-card" data-tilt data-sport="Basketball">
+                    <div class="sport-card-bg" style="background-image: url('https://images.unsplash.com/photo-1546519638-68e109498ffc?w=600&q=80')"></div>
+                    <div class="sport-card-overlay"></div>
+                    <div class="sport-card-content">
+                        <span class="sport-icon">🏀</span>
+                        <h3 class="sport-name">Basketball</h3>
+                        <p class="sport-tagline">Ball is life</p>
+                        <button class="sport-book-btn" data-sport="Basketball">Book Now</button>
+                    </div>
+                    <div class="sport-card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Café Section -->
+    <section class="cafe" id="cafe">
+        <div class="cafe-bg"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-title cafe-title">FUEL YOUR GAME</h2>
+                <p class="section-subtitle cafe-subtitle">Urban Café — Catch your breath. Refuel. Go again.</p>
+            </div>
+            <div class="cafe-grid">
+                <div class="cafe-card">
+                    <div class="cafe-card-img" style="background-image: url('https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=400&q=80')"></div>
+                    <div class="cafe-card-info">
+                        <h4>Loaded Fries</h4>
+                        <p>Crispy, cheesy, irresistible</p>
+                    </div>
+                </div>
+                <div class="cafe-card">
+                    <div class="cafe-card-img" style="background-image: url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80')"></div>
+                    <div class="cafe-card-info">
+                        <h4>Gourmet Burgers</h4>
+                        <p>Stacked high, packed with flavor</p>
+                    </div>
+                </div>
+                <div class="cafe-card">
+                    <div class="cafe-card-img" style="background-image: url('https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=400&q=80')"></div>
+                    <div class="cafe-card-info">
+                        <h4>Classic Wraps</h4>
+                        <p>Rolled to perfection</p>
+                    </div>
+                </div>
+                <div class="cafe-card">
+                    <div class="cafe-card-img" style="background-image: url('https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=400&q=80')"></div>
+                    <div class="cafe-card-info">
+                        <h4>Fresh Juices</h4>
+                        <p>Pure, natural energy</p>
+                    </div>
+                </div>
+                <div class="cafe-card">
+                    <div class="cafe-card-img" style="background-image: url('https://images.unsplash.com/photo-1553787499-6f9133860278?w=400&q=80')"></div>
+                    <div class="cafe-card-info">
+                        <h4>Protein Shakes</h4>
+                        <p>Power up post-game</p>
+                    </div>
+                </div>
+                <div class="cafe-card">
+                    <div class="cafe-card-img" style="background-image: url('https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80')"></div>
+                    <div class="cafe-card-info">
+                        <h4>Cold Coffee</h4>
+                        <p>Chilled, creamy bliss</p>
+                    </div>
+                </div>
+                <div class="cafe-card">
+                    <div class="cafe-card-img" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400&q=80')"></div>
+                    <div class="cafe-card-info">
+                        <h4>Pizzas</h4>
+                        <p>Hot, fresh, game-day fuel</p>
+                    </div>
+                </div>
+                <div class="cafe-card">
+                    <div class="cafe-card-img" style="background-image: url('https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&q=80')"></div>
+                    <div class="cafe-card-info">
+                        <h4>Desserts</h4>
+                        <p>Sweet victory rewards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- USP / Why Section -->
+    <section class="usp" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-title">WHY URBAN SPORTS ADDA?</h2>
+                <p class="section-subtitle">Everything you need. Nothing you don't.</p>
+            </div>
+            <div class="usp-grid">
+                <div class="usp-card">
+                    <div class="usp-icon-wrap">
+                        <span class="usp-icon">🏟️</span>
+                    </div>
+                    <h3 class="usp-title">7 Premium Sports</h3>
+                    <p class="usp-desc">All under one roof — cricket, football, badminton, pickleball, basketball, paddleball & RC racing</p>
+                </div>
+                <div class="usp-card">
+                    <div class="usp-icon-wrap">
+                        <span class="usp-icon">🕐</span>
+                    </div>
+                    <h3 class="usp-title">Flexible Timings</h3>
+                    <p class="usp-desc">Early morning to late night — play on your schedule, not ours</p>
+                </div>
+                <div class="usp-card">
+                    <div class="usp-icon-wrap">
+                        <span class="usp-icon">👨‍👩‍👧</span>
+                    </div>
+                    <h3 class="usp-title">For Everyone</h3>
+                    <p class="usp-desc">Beginners to pros, kids to corporates — every player is welcome</p>
+                </div>
+                <div class="usp-card">
+                    <div class="usp-icon-wrap">
+                        <span class="usp-icon">☕</span>
+                    </div>
+                    <h3 class="usp-title">In-House Café</h3>
+                    <p class="usp-desc">Eat, drink, recharge — fuel your game without leaving the arena</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-title">FIND US</h2>
+                <p class="section-subtitle">Come play. We're waiting for you.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.5!2d77.08!3d28.42!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDI1JzEyLjAiTiA3N8KwMDQnNDguMCJF!5e0!3m2!1sen!2sin!4v1700000000000"
+                        width="100%"
+                        height="100%"
+                        style="border:0; border-radius: 16px;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Sector 63A, Gurugram, Haryana</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+917838300004">+91 78383 00004</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:urbansportsadda@gmail.com">urbansportsadda@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">💬</span>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/917838300004" target="_blank">Chat with us</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                        </a>
+                    </div>
+                    <a href="https://maps.google.com/?q=Sector+63A+Gurugram+Haryana" target="_blank" class="btn btn-primary directions-btn">
+                        📍 Get Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">URBAN SPORTS ADDA</span>
+                    </a>
+                    <p class="footer-tagline">Gurugram's most electrifying multi-sport arena</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sports">Sports</a></li>
+                        <li><a href="#cafe">Café</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-cta-wrap">
+                    <h4>Ready to Play?</h4>
+                    <a href="#" class="btn btn-primary footer-book-btn" id="footerBookBtn">Book a Slot ⚡</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Urban Sports Adda. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="modal" id="modalContent">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-header">
+                <span class="modal-sport-icon" id="modalSportIcon">🏏</span>
+                <h3 class="modal-title">Book <span id="modalSportName">a Slot</span></h3>
+            </div>
+            <form class="modal-form" id="bookingForm">
+                <div class="form-group">
+                    <label for="fullName">
+                        <span class="form-icon">👤</span> Full Name
+                    </label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">
+                        <span class="form-icon">💬</span> Phone Number
+                    </label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter WhatsApp number" required>
+                </div>
+                <div class="form-group">
+                    <label for="dateTime">
+                        <span class="form-icon">📅</span> Preferred Date & Time <span class="optional">(optional)</span>
+                    </label>
+                    <input type="datetime-local" id="dateTime" name="dateTime">
+                </div>
+                <div class="form-group">
+                    <label for="players">
+                        <span class="form-icon">👥</span> Number of Players <span class="optional">(optional)</span>
+                    </label>
+                    <input type="number" id="players" name="players" min="1" max="30" placeholder="How many players?">
+                </div>
+                <button type="submit" class="btn btn-primary modal-submit">
+                    Send Booking Request on WhatsApp 💬
+                </button>
+            </form>
+            <!-- Success State -->
+            <div class="modal-success" id="modalSuccess">
+                <div class="success-checkmark">
+                    <div class="check-icon">
+                        <span class="icon-line line-tip"></span>
+                        <span class="icon-line line-long"></span>
+                        <div class="icon-circle"></div>
+                    </div>
+                </div>
+                <h3>Booking Request Sent!</h3>
+                <p>Redirecting to WhatsApp...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
