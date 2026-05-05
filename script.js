@@ -3,7 +3,7 @@
    ============================================= */
 
 // WhatsApp number (replace with actual number)
-const WHATSAPP_NUMBER = '917838300004';
+const WHATSAPP_NUMBER = '91995311118';
 
 // Sport icons map
 const sportIcons = {
