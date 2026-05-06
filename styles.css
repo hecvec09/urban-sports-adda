@@ -480,27 +480,6 @@ img { max-width: 100%; display: block; }
     max-width: 900px;
 }
 
-.hero-logo-banner {
-    margin-bottom: 32px;
-    opacity: 0;
-    transform: translateY(30px) scale(0.9);
-    animation: logoReveal 1s ease 1.2s forwards;
-}
-
-.hero-logo-img {
-    max-width: min(90vw, 600px);
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 0 40px rgba(255, 204, 0, 0.3), 0 0 80px rgba(255, 204, 0, 0.1);
-}
-
-@keyframes logoReveal {
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
 .hero-title {
     font-family: var(--font-heading);
     font-size: clamp(60px, 12vw, 140px);
