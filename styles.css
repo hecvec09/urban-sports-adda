@@ -218,22 +218,18 @@ img { max-width: 100%; display: block; }
 .nav-logo {
     display: flex;
     align-items: center;
-    gap: 8px;
     z-index: 1001;
 }
 
-.logo-icon {
-    font-size: 28px;
+.nav-logo-img {
+    height: 36px;
+    width: auto;
+    border-radius: 4px;
+    transition: all var(--transition-fast);
 }
 
-.logo-text {
-    font-family: var(--font-heading);
-    font-size: 22px;
-    letter-spacing: 3px;
-    background: linear-gradient(90deg, var(--accent-green), var(--text-primary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+.navbar.scrolled .nav-logo-img {
+    height: 30px;
 }
 
 .nav-links {
@@ -1192,8 +1188,13 @@ img { max-width: 100%; display: block; }
 .footer-logo {
     display: flex;
     align-items: center;
-    gap: 8px;
     margin-bottom: 12px;
+}
+
+.footer-logo-img {
+    height: 40px;
+    width: auto;
+    border-radius: 4px;
 }
 
 .footer-tagline {
