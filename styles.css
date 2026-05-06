@@ -138,27 +138,16 @@ img { max-width: 100%; display: block; }
 
 .loader-logo {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 12px;
+    justify-content: center;
     margin-bottom: 32px;
 }
 
-.loader-icon {
-    font-size: 48px;
-    animation: loaderPulse 1s ease infinite;
-}
-
-.loader-text {
-    font-family: var(--font-heading);
-    font-size: clamp(20px, 6vw, 48px);
-    letter-spacing: 4px;
-    background: linear-gradient(90deg, var(--accent-green), var(--accent-orange));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-align: center;
-    word-break: keep-all;
+.loader-logo-img {
+    max-width: min(80vw, 400px);
+    height: auto;
+    border-radius: 8px;
+    animation: loaderPulse 1.2s ease infinite;
 }
 
 .loader-bar {
