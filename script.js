@@ -330,6 +330,29 @@ phoneInput.addEventListener('input', (e) => {
     e.target.value = value;
 });
 
+// ---- Celebrity Video Play ----
+const celebPlayBtn = document.getElementById('celebPlayBtn');
+const celebVideo = document.getElementById('celebVideo');
+if (celebPlayBtn && celebVideo) {
+    celebPlayBtn.addEventListener('click', () => {
+        celebVideo.classList.add('playing');
+        celebVideo.play();
+        celebPlayBtn.style.display = 'none';
+    });
+    celebVideo.addEventListener('ended', () => {
+        celebVideo.classList.remove('playing');
+        celebPlayBtn.style.display = 'flex';
+        celebVideo.currentTime = 0;
+    });
+    celebVideo.addEventListener('click', () => {
+        if (!celebVideo.paused) {
+            celebVideo.pause();
+            celebVideo.classList.remove('playing');
+            celebPlayBtn.style.display = 'flex';
+        }
+    });
+}
+
 // ---- Smooth Scroll for all anchor links ----
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
